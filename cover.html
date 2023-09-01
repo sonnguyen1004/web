@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEMORIES - A Journey Through Time</title>
+	<link rel="icon" type="image/x-icon" href="/logo.png">
+	<!-- <link rel="stylesheet" type="text/css" href="css/base.css"> -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		* {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.cover-page {
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			/* background-color: #f1f1f1; */
+			margin: 0 250px;
+		}
+
+		.cover-page__title {
+			font-size: 48px;
+			font-weight: bold;
+			margin-bottom: 16px;
+		    color: black;
+		}
+
+		.cover-page__description {
+			font-size: 24px;
+			color: #63AF92;
+		}
+
+		.arrow-link {
+			position: absolute;
+			bottom: 16px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+		}
+
+		.arrow-link svg {
+			width: 24px;
+			height: 24px;
+			fill: #333;
+		}
+		.cover-page__description_cotent > p {
+			font-size: large;
+			color: #FAE1CD;
+		}
+		p {
+			font-size: 20px;
+			color: black;
+			font-weight: bold;
+		}
+		#logo {
+			margin-bottom: 130px;
+			margin-top: 10px;
+			width: 200px;
+			height: 100px;
+		}
+		
+#text{
+            animation: 7s FillSvg linear;
+            stroke-dasharray: 7000;
+
+        }
+        @keyframes FillSvg {
+            0%{
+                stroke-dashoffset: 7000;
+            }
+            100%{
+                stroke-dashoffset: 0;;
+            }
+        }
+
+		@media(max-width:1050px) {
+			.cover-page {
+				margin: 0;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+		@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+	@media(max-width:450px) {
+		#text {
+			width: 100%;
+			height: 180px;
+		}
+		p {
+			font-size : 13px;
+		}
+	}
+	@media(max-height:630px) {
+		#text {
+			width: 100%;
+			height: 300px;
+			margin-top: 50px;
+
+		}
+		p {
+			font-size : 14px;
+		}
+	 }
+
+	</style>
+</head>
+<body>
+	<div class="cover-page">
+		<svg id ="text" width="75%" height="372" viewBox="0 0 1062 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M153.985 168.394C153.985 156.203 156.152 143.736 145.857 133.028C132.455 119.087 106.312 104.407 80.0451 110.857C50.6866 118.068 18.3271 138.848 9.42649 159.359C-4.58134 191.646 16.2235 218.407 49.805 240.91C86.3822 265.42 139.528 274.682 185.45 256.364C222.043 241.768 245.665 215.72 265.683 191.1C289.311 162.041 307.002 130.609 323.192 99.3257C338.538 69.6735 350.635 38.5283 350.635 6.95665C350.635 2.92506 347.843 6.03988 347.139 8.14605C344.051 17.3857 342.75 26.7481 341.196 36.2014C332.069 91.7159 313.664 146.998 279.842 198.114C273.297 208.005 265.729 217.547 258.603 227.239C256.557 230.021 254.236 232.638 252.747 235.561C250.211 240.543 258.18 232.503 259.216 231.638C282.179 212.433 307.48 194.682 328.872 174.576C350.083 154.641 367.749 132.166 380.351 109.074C393.306 85.3335 406.695 60.8973 413.214 35.9637C414.291 31.8393 413.073 31.322 411.203 35.8449C406.433 47.3804 401.928 59.0018 396.958 70.4974C382.314 104.356 365.241 137.559 349.062 171.069C339.739 190.379 331.16 208.937 327.386 229.142C326.75 232.552 325.413 238.282 330.272 240.553C336.07 243.265 344.46 242.598 350.199 240.257C367.326 233.268 381.821 220.528 395.209 210.596C403.807 204.217 411.406 197.643 416.71 189.792C421.516 182.677 407.05 176.325 397.743 179.807C375.962 187.954 377.002 213.367 377.38 227.239C377.643 236.89 388.738 256.643 408.319 252.204C439.42 245.153 466.598 217.047 467.052 195.142C467.073 194.133 468.311 186.256 466.265 189.317C463.176 193.94 463.357 199.96 461.545 204.89C457.157 216.827 456.487 229.714 450.97 241.386C450.377 242.64 448.364 246.837 450.009 243.11C455.834 229.906 473.221 216.468 484.969 205.544C486.505 204.115 517.008 174.21 517.394 185.751C517.645 193.266 514.948 200.628 513.462 208.04C511.328 218.678 509.237 229.439 505.595 239.9C504.422 243.269 502.711 246.615 500.438 249.707C496.684 254.815 504.381 238.59 507.081 233.183C514.172 218.982 523.278 205.078 534.524 192.17C539.053 186.972 543.368 182.594 551.217 179.628C554.673 178.323 553.577 181.977 553.577 183.373C553.577 193.741 550.58 204.116 548.858 214.4C546.341 229.422 541.253 245.237 542.565 260.407C542.884 264.098 557.238 255.722 557.861 255.413C580.154 244.363 601.324 231.925 620.177 218.204C630.296 210.839 638.07 203.29 641.676 193.477C642.9 190.151 645.689 183.253 641.327 180.401C631.127 173.731 616.279 183.289 611.786 188.723C600.079 202.877 594.099 215.994 594.48 232.351C594.676 240.688 604.044 252.536 617.379 253.987C628.42 255.189 636.99 256.956 646.396 251.134C662.727 241.026 668.908 223.547 671.567 209.288C673.07 201.231 673.057 193.496 663.701 187.712C662.798 187.154 651.978 182.124 651.202 183.967C650.15 186.475 653.326 187.593 656.534 187.652C667.797 187.86 676.032 182.835 682.579 176.954C694.111 166.594 687.391 156.625 667.809 156.625C658.099 156.625 679.518 164.737 681.006 165.184C695.691 169.604 710.779 173.394 725.93 176.954C740.432 180.36 727.237 199.889 725.843 206.316C725.334 208.656 715.289 236.842 728.552 233.421C742.1 229.927 749.795 216.602 754.859 208.397C762.188 196.522 767.792 183.169 769.017 170.237C769.167 168.668 768.916 162.606 767.182 167.324C763.968 176.07 764.278 185.394 762.813 194.31C760.82 206.425 758.942 218.619 758.18 230.805C757.992 233.817 755.713 243.557 760.102 245.903C771.907 252.211 798.39 236.661 806.775 232.589C824.804 223.83 842.842 214.343 857.816 203.166C865.421 197.49 871.587 190.752 878.53 184.68C881.457 182.121 884.276 178.35 880.452 175.646C871.402 169.245 856.665 171.052 846.804 175.468C819.274 187.797 791.848 204.667 788.334 228.309C786.717 239.174 789.835 253.34 809.396 255.057C842.54 257.965 877.366 253.478 902.128 236.868C918.316 226.01 931.145 209.216 931.145 193.596C931.145 190.317 927.165 175.666 916.986 179.331C906.379 183.15 945.936 200.534 949.062 202.037C966.864 210.601 971.253 220.006 968.546 234.729C966.759 244.46 958.113 250.005 945.303 253.393C939.984 254.799 923.91 258.886 918.559 256.959C915.559 255.879 917.066 254.184 919.521 253.927C935.468 252.259 951.594 252.104 967.679 251.253C987.23 250.218 1006.97 249.141 1026.41 247.33C1029.87 247.008 1038.15 245.814 1040.92 244.12C1052.45 237.06 1054.11 219.282 1055.42 209.645C1056.38 202.695 1057 195.95 1057 188.96C1057 186.365 1057 183.581 1057 187.652C1057 191.576 1057 195.499 1057 199.421" stroke="black" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+
+		<p class="cover-page__description"><i>|PRE ALBUM MEMORY|</i> </p>
+		<div class="cover-page__description_content">
+			<p class="Content1">Kỉ niệm là thứ duy nhất và sau cùng còn ở lại.</p>
+			
+			<p class="Content">Khi những mảnh nhỏ kí ức được góp nhặt, đủ để tua ngược thành một thước phim, đó có lẽ là lúc mà chúng ta đã đi qua quá nhiều điều, trải qua quá nhiều cảm xúc và là lúc chúng ta có thể dựng lên được cái kết mình mong muốn cho bộ phim <p style="color : #F17326;">“Hai Ba và 1000 ngày ở Phan”.</p></p>
+			
+			<p class="Content">Đây có lẽ là phần đặc biệt nhất trong chiếc web này. Đúng như cái tên mà chúng ta đặt Royx23 - Record Of Youth chiếc online album này có lẽ sẽ là chiếc máy quay chạy bằng cơm khi tua ngược lại quãng thời gian chúng ta dành cho Hai Ba. Không chính xác và đầy đủ nhất nhưng lại là những mục Highlight đẹp đẽ nhất.</p></div>
+		<img src ="/logo2.png" id ="logo"/>
+	</div>
+	<audio id="audio" autoplay>
+		<source src="write.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	  
+	  <script>
+		function startAudio() {
+		  var audio = document.getElementById('audio');
+		  audio.play();
+	  
+		  setTimeout(stopAudio, 3500); // Stop the audio after 4 seconds (4000 milliseconds)
+		}
+	  
+		function stopAudio() {
+		  var audio = document.getElementById('audio');
+		  audio.pause();
+		  audio.currentTime = 0;
+		}
+	  
+		// Call startAudio() when the page loads
+		window.addEventListener('load', startAudio);
+	  </script>
+	  
+	  
+
+	<a href="memories.html" class="arrow-link">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path fill="none" d="M0 0h24v24H0z"/>
+			<path d="M10 17l5-5-5-5v10z"/>
+		</svg>
+	</a>
+	<script>
+		// Add event listener for SVG keyframe animation start
+		document.getElementById("text").addEventListener("animationstart", function() {
+		  // Hide the content and logo elements
+		  var paragraphs = document.querySelectorAll(".Content, .Content1, p");
+		  paragraphs.forEach(function(paragraph) {
+			paragraph.style.opacity = "0";
+			paragraph.style.transition = "opacity 0.5s ease";
+		  });
+	  
+		  var logo = document.getElementById("logo");
+		  logo.style.opacity = "0";
+		  logo.style.transition = "opacity 0.5s ease";
+		});
+	  
+		// Add event listener for SVG keyframe animation end
+		document.getElementById("text").addEventListener("animationend", function() {
+		  // Show the content and logo elements one after another
+		  var paragraphs = document.querySelectorAll(".Content, .Content1, p");
+		  paragraphs.forEach(function(paragraph, index) {
+			setTimeout(function() {
+			  paragraph.style.opacity = "1";
+			}, index * 500); // Adjust the delay (500 milliseconds = 0.5 second)
+		  });
+	  
+		  var logo = document.getElementById("logo");
+		  setTimeout(function() {
+			logo.style.opacity = "1";
+		  }, paragraphs.length * 500); // Adjust the delay based on the number of paragraphs
+		});
+	  </script>
+	 <script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+ 
+</script>
+</body>
+</html>

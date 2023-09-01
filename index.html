@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X23</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <style>
+      #map {
+      width: 200px;
+      height: 200px;
+      display: none; /* Hide the map initially */
+    }
+
+    .map-link {
+      cursor: pointer;
+    }
+      
+    </style>
+  </head>
+
+  <body>
+    <header id ="header">
+      <div class="nav-bar" id="nav">
+        <a href="" class="logo" id ="logo-nav">ROYX23</a>
+        <div class="navigation">
+          <div class="nav-items">
+            <i class="uil uil-times nav-close-btn"></i>
+            <a href="#main"><i class="uil uil-home" id="home-icon"></i> Home</a>
+            <a href="explore.html" target="_blank" id="explore-icon"><i class="uil uil-compass" id="explore-link"></i> Explore</a>
+            <a href="#band"><i class="uil uil-info-circle" id="about-icon"></i> About</a>
+            <a href="#contact"><i class="uil uil-envelope" id ="contact-icon"></i> Contact</a>
+             <a href="cover.html" target="_blank" ><i class="uil uil-film" id ="contact-icon"></i> Memories</a>
+          </div>
+        </div>
+        <i class="uil uil-apps nav-menu-btn"></i>
+      </div>
+    </header>
+
+    <div class="splash-screen">
+      <div class="splash-icon"></div>
+    </div>
+
+    <div class="intro-page">
+      <h1 class="welcome">Welcome to ROYX23</h1>
+      <p class="a">Discover a world of dynamism and youthfulness</p>
+      <a href="#" class="button" onclick="hideIntroPage()">Get Started</a>
+      <div class="cursor"></div>
+    </div>
+
+    <section class="home" id="main">
+      <div class="swiper bg-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="1.JPG" alt="" />
+            <div class="text-content">
+              <h2 class="title">Xin <span>Chào</span></h2>
+              <p>Năng Động</p>
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img src="2.jpg" alt="" />
+            <div class="text-content">
+              <h2 class="title">Các<span>Bạn</span></h2>
+              <p>Tuổi Trẻ</p>
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img src="6.jpg" alt="" />
+            <div class="text-content">
+              <h2 class="title">Chúng<span>Tớ</span></h2>
+              <p>Thanh Xuân</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="7.jpg" alt="" />
+            <div class="text-content">
+              <h2 class="title">Là <span>ROYX23</span></h2>
+              <p>Nhiệt Huyết</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="4-1.jpg" alt="" />
+            <div class="text-content">
+              <h2 class="title">Là <span>Tập Thể</span></h2>
+              <p>Mạnh nhất</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slider-thumbs">
+        <div class="swiper-wrapper thumbs-container">
+          <img src="1.JPG" class="swiper-slide" alt="" />
+          <img src="2.jpg" class="swiper-slide" alt="" />
+          <img src="6.jpg" class="swiper-slide" alt="" />
+          <img src="7.jpg" class="swiper-slide" alt="" />
+          <img src="4-1.jpg" class="swiper-slide" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="w3-container w3-content w3-center w3-padding-64"
+      style="max-width:800px;"
+      id="band"
+    >
+      <h2
+        class="w3-wide sr-text"
+        style="margin-bottom: 20px;font-weight:bolder; font-size: 30px; font-family: 'Segoe UI', Arial, sans-serif;"
+      >
+        THE ROYX23.
+      </h2>
+      <p
+        class="w3-opacity sr-text"
+        style="margin-bottom: 20px; font-size: 15px; color: grey;"
+      >
+        <i>ROYX23 DZOO</i>
+      </p>
+      <p class="w3-justify sr-text">
+        🔔 Xin chào! Chúng mình là 𝕩𝟚𝟛-ers của ngôi nhà Phan Châu Trinh
+        (2021-2024) đâyyy 🌟 💌 Mọi người đã chuẩn bị gì cho một chặng đường mới
+        chưa nào? Hẳn sẽ có nhiều bỡ ngỡ, lo lắng lắm nhỉ, thôi thì “Đưa tay đây
+        nào… Mãi bên nhau bạn nhé”, niềm vui tự khắc sẽ tới thôi! 🎞 Thước phim
+        của thanh xuân đã bắt đầu chạy, 40 anh em chúng mình hãy cùng nhau vẽ
+        nên những câu chuyện mới, cùng nhau “Record of Youth”- quãng thời gian
+        đáng quí, đáng yêu nhất của chúng ta trong 3 năm cấp 3 dưới mái trường
+        Phan Châu Trinh này các bạn nhé! 🪄 Từ bây giờ nhiệm vụ của 𝕩𝟚𝟛-ers là
+        lấp đầy kỉ niệm vào những thước phim còn để trống. Mong mọi người hãy
+        theo dõi và ủng hộ chúng tớ! Vì một thanh xuân tươi đẹp, nhiệt huyết của
+        chúng mình, fighting! 🎊 Chào mừng các bạn đã đến với Phan Châu Trinh,
+        đến với đại gia đình mang tên 𝕩𝟚𝟛 ✨
+      </p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+          <p>Ho Huong Giang</p>
+          <img
+            src="gv1.jpeg"
+            class="w3-round w3-margin-bottom sr-img"
+            alt="Random Name"
+            style="width:60%"
+          />
+        </div>
+        <div class="w3-third">
+          <p>Huynh Thi Thuy Phuong</p>
+          <img
+            src="gv2.jpeg"
+            class="w3-round w3-margin-bottom sr-img"
+            alt="Random Name"
+            style="width:60%"
+          />
+        </div>
+       <!--<div class="w3-third">
+          <p>Phuc</p>
+          <img
+            src="/img/bphuc.jpeg"
+            class="w3-round sr-img"
+            alt="Random Name"
+            style="width:60%"
+          />
+       </div -->
+      </div>
+    </div>
+
+    <div
+      id="video-container"
+      class="fullscreen-container"
+      style="background-color: black; height: 100vh; display: flex; justify-content: center; align-items: center; color: white;"
+    >
+      <div class="w3-container w3-content w3-center">
+        <h2
+          class="w3-wide sr-text"
+          style="margin-bottom: 20px; font-weight: bolder; font-size: 30px; font-family: 'Segoe UI', Arial, sans-serif; letter-spacing:4; font-weight: bold;"
+        >
+          WEARE
+        </h2>
+        <p class="text" style="margin-bottom: 40px;">unforgettable.</p>
+
+        <div style="margin-bottom: 20px;">
+          <video id="myVideo" autoplay muted playsinline loop style="width: 75%; max-width: 800px; height: 90%;">
+            <source src="reel.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="w3-container w3-content w3-padding-64"
+      style="max-width:800px"
+      id="contact"
+    >
+      <h2 class="w3-wide w3-center slide-left">CONTACT</h2>
+      <p class="w3-opacity w3-center slide-right">
+        <i>Các cậu có tâm tình gì hông nhỉ !?</i>
+      </p>
+      <div class="b">
+        <div class="w3-col m6 w3-large w3-margin-bottom slide-left">
+            <a id="location-link" class="map-link">
+              <i id="location-dot" class="fa-solid fa-location-dot" style="width:10px;"></i> Da Nang, Viet Nam
+            </a>
+            <br />
+            <div class="media-icons">
+              <a href="https://www.facebook.com/ROYX23" target="_blank"><i class="uil uil-facebook-f slide-left"></i></a>
+              <a href="https://www.instagram.com/_roy.x23/" target="_blank"><i class="uil uil-instagram slide-right"></i></a>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="truong.jpg" class="img-tr" style="width:100%" />
+
+    <!-- Include the ScrollReveal library -->
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.sr-img', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+        });
+
+        ScrollReveal().reveal('.sr-text', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+        });
+        ScrollReveal().reveal('.text', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+        });
+        ScrollReveal().reveal('#video-container', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+      });
+      ScrollReveal().reveal('.img-tr', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+      });
+      ScrollReveal().reveal('.circle-image', {
+          duration: 1000,
+          delay: 200,
+          distance: '50px',
+          origin: 'bottom',
+          easing: 'ease-in-out',
+          mobile: true,
+          reset: true
+      });
+    </script>
+   <script>
+    // Get the video element
+    const video = document.getElementById("myVideo");
+  
+    // Autoplay the video
+    video.autoplay = true;
+    video.muted = true; 
+  
+    // Hide the default controls
+    video.controls = false;
+  </script>
+
+    <audio id="intro-audio" loop>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to add and remove classes based on scroll position
+      function animateOnScroll() {
+        var elements = document.querySelectorAll('.slide-left, .slide-right');
+
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          var position = element.getBoundingClientRect().top;
+
+          if (position <= window.innerHeight * 0.75 && position >= 0) {
+            element.classList.add('show');
+          } else {
+            element.classList.remove('show');
+          }
+        }
+      }
+
+      // Event listener for scroll events
+      window.addEventListener('scroll', animateOnScroll);
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>      
+     <script>
+      function initMap() {
+        // Create a map instance
+        var map = L.map('map').setView([16.07490457486075, 108.2194618517467], 14); // Coordinates of Da Nang, Viet Nam and zoom level
+        
+        // Add a dark-themed TileLayer to the map
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        
+        // Create a marker for the location dot
+        var marker = L.marker([16.07490457486075, 108.21946185174677]);
+        
+        // Show/hide the map when clicking the location link
+        var mapVisible = false;
+        var locationLink = document.getElementById("location-link");
+        locationLink.addEventListener("click", function() {
+          var mapContainer = document.getElementById("map");
+          mapContainer.style.display = mapVisible ? "none" : "block";
+          mapVisible = !mapVisible;
+  
+          if (mapVisible) {
+            map.invalidateSize(); // Refresh the map when it becomes visible
+            marker.addTo(map);
+          } else {
+            map.removeLayer(marker);
+          }
+        });
+        
+        // Add the name of the school as a custom map overlay
+        var schoolName = L.divIcon({ className: 'school-name', html: 'Phan Châu Trinh' });
+        L.marker([16.07490457486075, 108.2194618517467], { icon: schoolName }).addTo(map);
+      }
+      
+      // Call the initMap function when the page loads
+      window.addEventListener('load', initMap);
+    </script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; DESIGNED BY KD&KN</p>
+    <div class="footer-images">
+      <img src="knkd.jpg" alt="Circle Image 2" class="circle-image" />
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
